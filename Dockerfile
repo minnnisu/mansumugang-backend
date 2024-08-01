@@ -9,7 +9,7 @@ ARG ENV
 # JAR 파일 메인 디렉토리에 복사
 COPY ${JAR_FILE} mansumugang-spring-boot-app.jar
 
-# 정적 파일을 저장하기 위한 공간
+# 정적 파일을 저장하기 위한 폴더 추가
 RUN mkdir -p /app/mm
 
 # 시스템 진입점 정의
